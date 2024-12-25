@@ -21,7 +21,11 @@ const App = () => {
   };
 
   return (
-    <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
+    <div
+      className="app"
+      data-testid="app"
+      style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}
+    >
       <h1>Markdown Previewer</h1>
       <textarea
         style={{
@@ -38,6 +42,8 @@ const App = () => {
         onChange={(e) => setMarkdown(e.target.value)}
       />
       <div
+        className="preview"
+        data-testid="preview"
         style={{
           border: "1px solid #ccc",
           padding: "10px",
