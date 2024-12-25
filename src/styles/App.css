@@ -1,12 +1,31 @@
-h1 {
-    color: #27aedb;
-    text-align: center;
-    }
-    
+.app {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
 
-button{
-    color: #27aedb;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+.textarea {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 16px;
+  resize: none;
+}
+
+.preview {
+  width: 50%;
+  height: 100%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.loading {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin: auto;
 }
